@@ -14,7 +14,7 @@ def get_Html(url):
     '''获取网页源码'''
     page=request.urlopen(url)
     htmlcode=page.read()#读取页面源码
-    print(htmlcode.decode("UTF-8"))
+    # print(htmlcode.decode("UTF-8"))
     return htmlcode.decode("UTF-8")
 
 
@@ -22,7 +22,7 @@ def get_Img(html):
     reg=r'src="(.+?\.jpg)" pic_ext'#https://imgsa.baidu.com/forum/w%3D580/sign=294db374d462853592e0d229a0ee76f2/e732c895d143ad4b630e8f4683025aafa40f0611.jpg
     imgre=re.compile(reg)
     imglist=re.findall(imgre, html)
-    path = 'D:\\Temp'  
+    path = os.getcwd()+'\\test'
     # 将图片保存到D:\\test文件夹中，如果没有test文件夹则创建
     if not os.path.isdir(path): 
         os.makedirs(path)  
@@ -31,5 +31,7 @@ def get_Img(html):
     for imgPath in imglist:
         request.urlretrieve(imgPath,'{}{}.jpg'.format(paths,imgName))
         imgName+=1
-html = get_Html("http://tieba.baidu.com/p/2460150866")#获取该网址网页详细信息，得到的html就是网页的源代码  
-print(get_Img(html)) #从网页源代码中分析并下载保存图片   
+    print('总共%s张照片' % imgName)
+if __name__ == '__main__':
+    html = get_Html("http://tieba.baidu.com/p/2460150866")#获取该网址网页详细信息，得到的html就是网页的源代码  
+    get_Img(html) #从网页源代码中分析并下载保存图片   [Finished in 6.2s]
