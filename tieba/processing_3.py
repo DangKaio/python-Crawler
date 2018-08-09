@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Dang Kai
 # @Date: 2018-08-08 16:30:10
-# @Last Modified time: 2018-08-08 16:53:18
+# @Last Modified time: 2018-08-08 17:03:25
 # @E-mail: 1370465454@qq.com
 # @Description: 进程间通信 python 的multiprocessing提供了queue 、Pipes等多种方式来交换数据
 
@@ -45,4 +45,4 @@ if __name__ == '__main__':
     #pr进程里是死循环，无法等待其结束，则 强制
     pr.terminate()
 
-#此处有个问题 必须在cmd下运行才会执行read 网上说是解释器问题
+#此处有个问题 必须在cmd下运行才会执行read ，在sublime运行不了网上说是解释器问题
