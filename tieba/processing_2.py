@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # @Author: Dang Kai
 # @Date: 2018-08-08 15:31:14
-# @Last Modified time: 2018-08-08 15:40:39
+# @Last Modified time: 2018-08-15 09:32:19
 # @E-mail: 1370465454@qq.com
-# @Description: 
+# @Description: 进程池
 from multiprocessing import Pool
 import os,time,random
 #启动大量的子进程，可以用进程池批量创建子进程
