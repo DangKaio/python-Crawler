@@ -4,6 +4,11 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Student_Manage" />
+    <orderEntry type="module" module-name="Algorithm_study" />
+    <orderEntry type="module" module-name="vote_mysite" />
+    <orderEntry type="module" module-name="Test_Login" />
+    <orderEntry type="module" module-name="uinttest_study" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

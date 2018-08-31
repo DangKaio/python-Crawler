@@ -5,3 +5,7 @@
 # @Email   : 1370465454@qq.com
 # @File    : 
 # @Description:
+adb devices
+netstat -ano | findstr "5037"
+taskkill -f -pid 
+adb nodaemon server

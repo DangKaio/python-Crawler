@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../python-selenium-unittest/.idea/Test_Login.iml" filepath="$PROJECT_DIR$/../python-selenium-unittest/.idea/Test_Login.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python-Crawler.iml" filepath="$PROJECT_DIR$/.idea/python-Crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../uinttest_study/.idea/uinttest_study.iml" filepath="$PROJECT_DIR$/../uinttest_study/.idea/uinttest_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vote_mysite/.idea/vote_mysite.iml" filepath="$PROJECT_DIR$/../vote_mysite/.idea/vote_mysite.iml" />
     </modules>
   </component>
 </project>

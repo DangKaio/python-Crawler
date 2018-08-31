@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Dang Kai
 # @Date: 2018-08-15 14:33:25
-# @Last Modified time: 2018-08-15 14:53:53
+# @Last Modified time: 2018-08-16 15:05:00
 # @E-mail: 1370465454@qq.com
 # @Description: 
 import requests
@@ -54,7 +54,7 @@ def save_image(item):
 
     if response.status_code==200:
         file_path='{0}/{1}.{2}'.format(item.get('title'),md5(response.content).hexdigest(),'jpg')
-        print(file_path)
+        # print(file_path)
         #判断路径是否存在，如果不存在，写入
         if not os.path.exists(file_path):
             with open(file_path,'wb')as f:
@@ -63,7 +63,7 @@ def save_image(item):
 def main(offset,keyword):
     json=get_page(offset,keyword)
     for item in get_images(json):
-        print(item)
+        # print(item)
         save_image(item)
 if __name__ == '__main__':
     keyword='街拍'#input("请输入要爬取图片的关键词:")
